@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run development",
+    "development": "NODE_ENV=development DEV_MODE=true node build",
+    "debug": "DEBUG=* NODE_ENV=development nodemon --inspect index -w",
+    "build:stage": "NODE_ENV=production node  --max_old_space_size=4096 build",
+    "build:prod": "NODE_ENV=production node  --max_old_space_size=4096 build"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "http-shutdown": "1.2.0",
+    "module-alias": "^2.2.0",
+    "rocket-starter": "^1.1.1",
+    "yargs": "^13.2.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
