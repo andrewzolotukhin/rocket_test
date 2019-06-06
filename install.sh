@@ -7,8 +7,10 @@ rm -rf frontend/node_modules
 cd common
 npm i
 
-cd backend
+cd ../backend
 npm i
 
-cd frontend
+cd ../frontend
 npm i
+
+cd ..
